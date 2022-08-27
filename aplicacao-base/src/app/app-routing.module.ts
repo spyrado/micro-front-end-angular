@@ -8,7 +8,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   { path: 'home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
-  { path: 'users', loadChildren: () => import('./pages/users/users.module').then(m => m.UsersModule) },
+  { path: 'pokemons', loadChildren: () => import('./pages/users/users.module').then(m => m.UsersModule) },
 ];
 
 @NgModule({
