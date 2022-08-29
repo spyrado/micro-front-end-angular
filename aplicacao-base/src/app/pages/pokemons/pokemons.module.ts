@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PokemonsRoutingModule } from './pokemons-routing.module';
@@ -12,6 +12,9 @@ import { PokemonsComponent } from './pokemons.component';
   imports: [
     CommonModule,
     PokemonsRoutingModule
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ]
 })
 export class PokemonsModule { }

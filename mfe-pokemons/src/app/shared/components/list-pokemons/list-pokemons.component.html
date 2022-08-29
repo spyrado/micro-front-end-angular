@@ -1,0 +1,15 @@
+<ul *ngIf="(pokemons$ | async) as pokemons" class="list-pokemons__list">
+  <li *ngFor="let pokemon of pokemons.results" class="list-pokemons__list-item">
+    <div class="d-flex mt-3 justify-content-center card__center">
+      <div class="card" style="width: 18rem;">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ pokemon.species.name }}</h5>
+          <p class="card-text"><strong>{{ pokemon.types[0].type.name  }}</strong></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dignissimos deserunt, exercitationem nam unde consequuntur omnis incl.</p>
+          <a href="#" class="btn btn-primary d-block">Detalhes</a>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
